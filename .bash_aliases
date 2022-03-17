@@ -11,3 +11,4 @@ complete -F __start_kubectl k
 alias ka='kubectl apply -f'
 alias kd='kubectl delete -f'
 
+k-ns() { kubectl config set-context --current --namespace="$1"; }
